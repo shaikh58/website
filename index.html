@@ -7,7 +7,13 @@
 
     <meta name="author" content="Mustafa Shaikh">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
     <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+   
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     
   </head>
@@ -22,18 +28,25 @@
                 <p class="name" style="text-align: center;">
                   Mustafa Shaikh
                 </p>
-                <p>sdfds <a href="https://deepmind.google/">Google DeepMind</a> in San Francisco, where I lead a small team that mostly works on <a href="https://www.matthewtancik.com/nerf">NeRF</a>.
+                <p>I'm a recent graduate from the M.S. program in Electrical and Computer Engineering at the University of California, San Diego with a focus on Machine Learning, Robotics, and Control. 
+      
                 </p>
                 <p>
-                  At Google I've worked on <a href="https://www.google.com/glass/start/">Glass</a>,  <a href="https://ai.googleblog.com/2014/04/lens-blur-in-new-google-camera-app.html">Lens Blur</a>, <a href="https://ai.googleblog.com/2014/10/hdr-low-light-and-high-dynamic-range.html">HDR+</a>, <a href="https://blog.google/products/google-ar-vr/introducing-next-generation-jump/">VR</a>, <a href="https://ai.googleblog.com/2017/10/portrait-mode-on-pixel-2-and-pixel-2-xl.html">Portrait Mode</a>, <a href="https://ai.googleblog.com/2020/12/portrait-light-enhancing-portrait.html">Portrait Light</a>, and <a href="https://blog.google/products/maps/three-maps-updates-io-2022/">Maps</a>. I did my PhD at <a href="http://www.eecs.berkeley.edu/">UC Berkeley</a>, where I was advised by <a href="http://www.cs.berkeley.edu/~malik/">Jitendra Malik</a>. I've received the <a href="https://www.thecvf.com/?page_id=413#YRA">PAMI Young Researcher Award</a>.
+                  My research focus during my masters studies was on a 
+                  trajectory optimization problem with a limited field of view formulation in a hide-and-seek game scenario. 
+                  The result of this work is pending review for publication at ICRA2025.
+                </p>
+                <p>
+                  I'm currently working on a multi-object tracking problem using deep learning in a collaboration between the department of Cell Biology at UCSD and 
+                  Computational Neuroscience at SALK Institute for Biomedical Research. 
+                </p>
+                <p>
+                   Previously, I have worked in industry for ~5 years in large organizations in a data science role. I completed my undergraduate studies in engineering at the University of Toronto.
                 </p>
                 <p style="text-align:center">
-                  <a href="mailto:jonbarron@gmail.com">Email</a> &nbsp;/&nbsp;
-                  <a href="data/JonBarron-CV.pdf">CV</a> &nbsp;/&nbsp;
-                  <a href="data/JonBarron-bio.txt">Bio</a> &nbsp;/&nbsp;
-                  <a href="https://scholar.google.com/citations?hl=en&user=jktWnL8AAAAJ">Scholar</a> &nbsp;/&nbsp;
-                  <a href="https://twitter.com/jon_barron">Twitter</a> &nbsp;/&nbsp;
-                  <a href="https://github.com/jonbarron/">Github</a>
+                  <a href="mailto:mustafanshaikh@gmail.com">Email</a> &nbsp;/&nbsp;
+                  <a href="data/Robotics_resume.pdf">Resume</a> &nbsp;/&nbsp;
+                  <a href="https://github.com/shaikh58/">Github</a>
                 </p>
               </td>
               <td style="padding:2.5%;width:40%;max-width:40%">
@@ -44,9 +57,9 @@
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
               <tr>
               <td style="padding:20px;width:100%;vertical-align:middle">
-                <h2>Research</h2>
+                <h2>Projects</h2>
                 <p>
-                  I'm interested in computer vision, deep learning, generative AI, and image processing. Most of my research is about inferring the physical world (shape, motion, color, light, etc) from images, usually with radiance fields. Some papers are <span class="highlight">highlighted</span>.
+                  I'm interested in deep learning, robotics, and control. Below are some of the projects I've worked on that are related to my interests.
                 </p>
               </td>
             </tr>
@@ -54,13 +67,13 @@
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
 
-    <tr onmouseout="ever_stop()" onmouseover="ever_start()">
+    <tr onmouseout="vis_stop()" onmouseover="vis_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
-          <div class="two" id='ever_image'>
-					  <img src='images/ever_after.png' width=100%>
+          <div class="two" id='vis_image'>
+					  <img src='images/system_diagram.png' width=100%>
 					</div>
-          <img src='images/ever_before.png' width=100%>
+          <img src='images/system_diagram.png' width=100%>
         </div>
         <script type="text/javascript">
           function ever_start() {
@@ -74,29 +87,27 @@
         </script>
       </td>
       <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://ever.github.io/">
-			<span class="papertitle">EVER: Exact Volumetric Ellipsoid Rendering for Real-time View Synthesis
+        <a href="https://minnanzhou.github.io/VisibilityControl_web/">
+			<span class="papertitle">Control Strategies for Pursuit-Evasion Under Occlusion Using Visibility and Safety Barrier Functions
 </span>
         </a>
         <br>
-				<a href="https://half-potato.gitlab.io/">Alexander Mai</a>, 
-				<a href="https://phogzone.com/">Peter Hedman</a>,
-				<a href="https://grgkopanas.github.io/">George Kopanas</a>,
-        <a href="https://dorverbin.github.io/">Dor Verbin</a>,
-        <a href="https://scholar.google.com/citations?user=ozNFrecAAAAJ&hl=en">David Futschik</a>,
-        <a href="https://xharlie.github.io/">Qiangeng Xu</a>,
-        <a href="https://jacobsschool.ucsd.edu/faculty/profile?id=253">Falko Kuester</a>,
-				<strong>Jonathan T. Barron</strong>,
-        <a href="https://www.zhangyinda.com/">Yinda Zhang</a>
+				Minnan Zhou,
+				<strong>Mustafa Shaikh</strong>,
+        Vatsalya Chaubey,
+        Patrick Haggerty,
+        Shumon Koga,
+        Dimitra Panagou,
+        Nikolay Atanasov
 				<br>
-        <em>arXiv</em>, 2024
+        <em>Pending review at ICRA 2025</em>
         <br>
-        <a href="https://half-potato.gitlab.io/posts/ever/">project page</a>
+        <a href="https://minnanzhou.github.io/VisibilityControl_web/">project page</a>
         /
-        <a href="https://arxiv.org/abs/2410.01804">arXiv</a>
+        <em>arXiv coming soon</em>
         <p></p>
         <p>
-				Raytracing constant-density ellipsoids yields more accurate and flexible radiance fields than splatting Gaussians, and still runs in real-time.
+				
         </p>
       </td>
     </tr>
