@@ -12,7 +12,6 @@
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
     <link rel="manifest" href="images/favicon/site.webmanifest">
-    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
    
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     
@@ -28,26 +27,38 @@
                 <p class="name" style="text-align: center;">
                   Mustafa Shaikh
                 </p>
-                <p>I'm a recent graduate from the M.S. program in Electrical and Computer Engineering at the University of California, San Diego with a focus on Machine Learning, Robotics, and Control. 
+                <p>I'm a graduate of the M.S. program in Electrical and Computer Engineering at UC San Diego with a focus on Machine Learning, Robotics, and Control. 
       
                 </p>
                 <p>
-                  My research focus during my masters studies was on a 
-                  trajectory optimization problem with a limited field of view formulation in a hide-and-seek game scenario. 
-                  The result of this work is pending review for publication at ICRA2025.
+                  During my graduate research, I worked on a
+                  trajectory optimization problem with a limited field of view in a pursuer-evader scenario. 
+
                 </p>
                 <p>
-                  I'm currently working on a multi-object tracking problem using deep learning in a collaboration between the department of Cell Biology at UCSD and 
+                  I'm currently working on a multi-object tracking problem using deep learning in a collaboration between the Cell Biology at UCSD and 
                   Computational Neuroscience at SALK Institute for Biomedical Research. 
                 </p>
                 <p>
-                   Previously, I have worked in industry for ~5 years in large organizations in a data science role. I completed my undergraduate studies in engineering at the University of Toronto.
+                   Previously, I worked in industry for ~5 years in large organizations in a data science role.
+                   I worked closely with business stakeholders and led projects end to end.
+                   <br>
+                   <br>
+                   I completed my undergraduate studies in engineering at the University of Toronto.
                 </p>
-                <p style="text-align:center">
+
+                <div class="contact-links">
+                  <a href="mailto:mustafanshaikh@gmail.com" class="contact-link">Email</a>
+                  <a href="data/Robotics_resume.pdf" class="contact-link">Resume</a>
+                  <a href="https://github.com/shaikh58/" class="contact-link">Github</a>
+                </div>
+
+                <!-- <p style="text-align:center">
                   <a href="mailto:mustafanshaikh@gmail.com">Email</a> &nbsp;/&nbsp;
                   <a href="data/Robotics_resume.pdf">Resume</a> &nbsp;/&nbsp;
                   <a href="https://github.com/shaikh58/">Github</a>
-                </p>
+                </p> -->
+
               </td>
               <td style="padding:2.5%;width:40%;max-width:40%">
                 <a href="images/JonBarron.jpg"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/JonBarron.jpg" class="hoverZoomLink"></a>
@@ -76,20 +87,20 @@
           <img src='images/system_diagram.png' width=100%>
         </div>
         <script type="text/javascript">
-          function ever_start() {
-            document.getElementById('ever_image').style.opacity = "1";
+          function vis_start() {
+            document.getElementById('vis_image').style.opacity = "1";
           }
 
-          function ever_stop() {
-            document.getElementById('ever_image').style.opacity = "0";
+          function vis_stop() {
+            document.getElementById('vis_image').style.opacity = "0";
           }
-          ever_stop()
+          vis_stop()
         </script>
       </td>
       <td style="padding:20px;width:75%;vertical-align:middle">
         <a href="https://minnanzhou.github.io/VisibilityControl_web/">
 			<span class="papertitle">Control Strategies for Pursuit-Evasion Under Occlusion Using Visibility and Safety Barrier Functions
-</span>
+        </span>
         </a>
         <br>
 				Minnan Zhou,
@@ -100,7 +111,7 @@
         Dimitra Panagou,
         Nikolay Atanasov
 				<br>
-        <em>Pending review at ICRA 2025</em>
+        <em><strong>Pending review at ICRA 2025</strong></em>
         <br>
         <a href="https://minnanzhou.github.io/VisibilityControl_web/">project page</a>
         /
@@ -112,51 +123,19 @@
       </td>
     </tr>
 
-    <tr onmouseout="cat3d_stop()" onmouseover="cat3d_start()" bgcolor="#ffffd0">
+
+    <tr>
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
-          <div class="two" id='cat3d_image'><video  width=100% height=100% muted autoplay loop>
-          <source src="images/cat3d.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-          </video></div>
-          <img src='images/cat3d.jpg' width="160">
+          <img src='images/pointcloudposeprediction.png' width="160">
         </div>
-        <script type="text/javascript">
-          function cat3d_start() {
-            document.getElementById('cat3d_image').style.opacity = "1";
-          }
-
-          function cat3d_stop() {
-            document.getElementById('cat3d_image').style.opacity = "0";
-          }
-          cat3d_stop()
-        </script>
       </td>
       <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://cat3d.github.io/">
-			<span class="papertitle">CAT3D: Create Anything in 3D with Multi-View Diffusion Models
-</span>
+        <a href="https://github.com/shaikh58/PointCloudPosePrediction">
+        <span class="papertitle">Deep Pose Estimation from 3D Point Clouds</span>
         </a>
         <br>
-				<a href="https://ruiqigao.github.io/">Ruiqi Gao</a>*,
-        <a href="https://holynski.org/">Aleksander Holynski</a>*, 
-        <a href="https://henzler.github.io/">Philipp Henzler</a>,
-        <a href="https://github.com/ArthurBrussee">Arthur Brussee</a>, 
-				<a href="http://ricardomartinbrualla.com/">Ricardo Martin Brualla</a>, 
-        <a href="https://pratulsrinivasan.github.io/">Pratul P. Srinivasan</a>,
-				<strong>Jonathan T. Barron</strong>,
-        <a href="https://poolio.github.io/">Ben Poole</a>*
-
-        <br>
-        <em>NeurIPS</em>, 2024 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
-        <br>
-        <a href="https://cat3d.github.io/">project page</a>
-        /
-        <a href="https://arxiv.org/abs/2405.10314">arXiv</a>
-        <p></p>
-        <p>
-				A single model built around diffusion and NeRF that does text-to-3D, image-to-3D, and few-view reconstruction, trains in 1 minute, and renders at 60FPS in a browser.
-        </p>
+        <p>A PointNet-based deep learning approach to point cloud registration.</p>
       </td>
     </tr>
 
@@ -164,13 +143,13 @@
     <tr onmouseout="nerfcasting_stop()" onmouseover="nerfcasting_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
-          <div class="two" id='nerfcasting_image'><video  width=100% muted autoplay loop>
+          <!-- <div class="two" id='nerfcasting_image'><video  width=100% muted autoplay loop>
           <source src="images/nerfcasting.mp4" type="video/mp4">
           Your browser does not support the video tag.
-          </video></div>
-          <img src='images/nerfcasting.jpg' width=100%>
+          </video></div> -->
+          <img src='images/visualinertialslam.png' width=100%>
         </div>
-        <script type="text/javascript">
+        <!-- <script type="text/javascript">
           function nerfcasting_start() {
             document.getElementById('nerfcasting_image').style.opacity = "1";
           }
@@ -179,43 +158,26 @@
             document.getElementById('nerfcasting_image').style.opacity = "0";
           }
           nerfcasting_stop()
-        </script>
+        </script> -->
       </td>
       <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://nerf-casting.github.io/">
-          <span class="papertitle">NeRF-Casting: Improved View-Dependent Appearance with Consistent Reflections</span>
+        <a href="https://github.com/shaikh58/VisualInertialSLAM/tree/master">
+          <span class="papertitle">Visual Inertial SLAM</span>
         </a>
-        <br>
-				
-        <a href="https://dorverbin.github.io/">Dor Verbin</a>,
-        <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>,
-				<a href="https://phogzone.com/">Peter Hedman</a>,
-				<a href="https://benattal.github.io/">Benjamin Attal</a>, <br>
-				<a href="https://bmild.github.io/">Ben Mildenhall</a>,
-				<a href="https://szeliski.org/RichardSzeliski.htm">Richard Szeliski</a>,
-				<strong>Jonathan T. Barron</strong>
-        <br>
-        <em>SIGGRAPH Asia</em>, 2024
-        <br>
-        <a href="https://nerf-casting.github.io/">project page</a>
-        /
-        <a href="https://arxiv.org/abs/2405.14871">arXiv</a>
-        <p></p>
         <p>
-        Carefully casting reflection rays lets us synthesize photorealistic specularities in real-world scenes.
+        Landmark and trajectory estimation from calibrated stereo camera features and IMU measurements.
         </p>
       </td>
     </tr>
 
 
-
             <tr onmouseout="diverdi_stop()" onmouseover="diverdi_start()">
               <td style="padding:20px;width:25%;vertical-align:middle">
                 <div class="one">
-                  <div class="two" id='diverdi_image'><img src='images/diverdi_after.jpg'></div>
-                  <img src='images/diverdi_before.jpg'>
+                  <div class="two" id='diverdi_image'><img src='images/particlefilter.png'></div>
+                  <img src='images/particlefilter.png' width=100%>
                 </div>
-                <script type="text/javascript">
+                <!-- <script type="text/javascript">
                   function diverdi_start() {
                     document.getElementById('diverdi_image').style.opacity = "1";
                   }
@@ -224,23 +186,16 @@
                     document.getElementById('diverdi_image').style.opacity = "0";
                   }
                   diverdi_stop()
-                </script>
+                </script> -->
               </td>
               <td style="padding:20px;width:75%;vertical-align:middle">
-                <a href="https://drive.google.com/file/d/1mmT-LuK_eBZsl3qp4-fAshEPdgfbgvNE/view?usp=sharing">
-                  <span class="papertitle">Geometric Calibration for Mobile, Stereo, Autofocus Cameras</span>
+                <a href="https://github.com/shaikh58/ParticleFilterSLAM">
+                  <span class="papertitle">2D Occupancy and Texture Mapping</span>
                 </a>
-                <br>
-                <a href="http://www.stephendiverdi.com/">Stephen DiVerdi</a>,
-                <strong>Jonathan T. Barron</strong>
-                <br>
-                <em>WACV</em>, 2016
-                <br>
-                <a href="data/Diverdi2016.bib">bibtex</a>
-                <p></p>
-                <p>Standard techniques for stereo calibration don't work for cheap mobile cameras.</p>
+                <p>Particle filter for occupancy and texture mapping using LiDAR, RGBD camera, and IMU data.</p>
               </td>
             </tr>
+
 
             <tr onmouseout="dt_stop()" onmouseover="dt_start()">
               <td style="padding:20px;width:25%;vertical-align:middle">
@@ -260,114 +215,34 @@
                 </script>
               </td>
               <td style="padding:20px;width:75%;vertical-align:middle">
-                <a href="https://drive.google.com/file/d/178Xj2PZ1w6hZJpucU-TiZOoCemJmvsVQ/view?usp=sharing">
-                  <span class="papertitle">Semantic Image Segmentation with Task-Specific Edge Detection Using CNNs and a Discriminatively Trained Domain Transform</span>
+                <a href="https://github.com/shaikh58/StringWithBuffer">
+                  <span class="papertitle">(C++) String Library with Buffer Manager</span>
                 </a>
-                <br>
-                <em>CVPR</em>, 2016
-                <br>
-                <a href="http://liangchiehchen.com/">Liang-Chieh Chen</a>, <strong>Jonathan T. Barron</strong>, <a href="http://ttic.uchicago.edu/~gpapan/">George Papandreou</a>, <a href="http://www.cs.ubc.ca/~murphyk/">Kevin Murphy</a>, <a href="http://www.stat.ucla.edu/~yuille/">Alan L. Yuille</a>
-                <br>
-                <a href="data/Chen2016.bib">bibtex</a> /
-                <a href="http://liangchiehchen.com/projects/DeepLab.html">project page</a> /
-                <a href="https://bitbucket.org/aquariusjay/deeplab-public-ver2">code</a>
-                <p></p>
-                <p>By integrating an edge-aware filter into a convolutional neural network we can learn an edge-detector while improving semantic segmentation.</p>
+
+                <p>A String library from scratch with a buffer manager.</p>
               </td>
             </tr>
 
-            <tr onmouseout="ccc_stop()" onmouseover="ccc_start()" bgcolor="#ffffd0">
+
+
+            <tr>
               <td style="padding:20px;width:25%;vertical-align:middle">
                 <div class="one">
                   <div class="two" id='ccc_image'><img src='images/ccc_after.jpg'></div>
                   <img src='images/ccc_before.jpg'>
                 </div>
-                <script type="text/javascript">
-                  function ccc_start() {
-                    document.getElementById('ccc_image').style.opacity = "1";
-                  }
-
-                  function ccc_stop() {
-                    document.getElementById('ccc_image').style.opacity = "0";
-                  }
-                  ccc_stop()
-                </script>
               </td>
               <td style="padding:20px;width:75%;vertical-align:middle">
-                <a href="https://drive.google.com/file/d/1id74VNDL8ACrrWf6vYgN2M4kS8gd4n7w/view?usp=sharing">
-                  <span class="papertitle">Convolutional Color Constancy</span>
+                <a href="https://github.com/shaikh58/JSONQueryModel">
+                  <span class="papertitle">In-memory JSON Database and Query System</span>
                 </a>
-                <br>
-                <strong>Jonathan T. Barron</strong>
-                <br>
-                <em>ICCV</em>, 2015
-                <br>
-                <a href="https://drive.google.com/file/d/1vO3sVOMihmpNqsuASeR46Y_iME0lOANR/view?usp=sharing">supplement</a> / <a href="data/BarronICCV2015.bib">bibtex</a> / <a href="https://youtu.be/saHwKY9rfx0">video</a> (or <a href="https://drive.google.com/file/d/0B4nuwEMaEsnmalBNUzlENUJSVDg/view?usp=sharing">mp4</a>)
-                <p></p>
-                <p>By framing white balance as a chroma localization task we can discriminatively learn a color constancy model that beats the state-of-the-art by 40%.</p>
-              </td>
-            </tr>
-
-            <tr>
-              <td style="padding:20px;width:25%;vertical-align:middle">
-                <img src='images/Shelhamer2015.jpg'>
-              </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
-                <a href="https://drive.google.com/file/d/1stygV71uBruD7Ck9CaAQr7nREvr3DtUL/view?usp=sharing">
-                  <span class="papertitle">Scene Intrinsics and Depth from a Single Image</span>
-                </a>
-                <br>
-                <a href="http://imaginarynumber.net/">Evan Shelhamer</a>, <strong>Jonathan T. Barron</strong>, <a href="http://www.eecs.berkeley.edu/%7Etrevor/">Trevor Darrell</a>
-                <br>
-                <em>ICCV Workshop</em>, 2015
-                <br>
-                <a href="data/Shelhamer2015.bib">bibtex</a>
-                <p></p>
-                <p>The monocular depth estimates produced by fully convolutional networks can be used to inform intrinsic image estimation.</p>
-              </td>
-            </tr>
-
-            <tr>
-              <td style="padding:20px;width:25%;vertical-align:middle">
-                <img src="images/PABMM2015.jpg" alt="PontTuset" width="160" style="border-style: none">
-              </td>
-              <td width="75%" valign="middle">
-                <a href="https://arxiv.org/abs/1503.00848" id="MCG_journal">
-                  <span class="papertitle">Multiscale Combinatorial Grouping for Image Segmentation and Object Proposal Generation</span>
-                </a>
-                <br>
-                <a href="http://imatge.upc.edu/web/people/jordi-pont-tuset">Jordi Pont-Tuset</a>, <a href="http://www.cs.berkeley.edu/~arbelaez/">Pablo Arbel&aacuteez</a>, <strong>Jonathan T. Barron</strong>, <a href="http://imatge.upc.edu/web/ferran">Ferran Marqu&eacutes</a>, <a href="http://www.cs.berkeley.edu/~malik/">Jitendra Malik</a>
-                <br>
-                <em>TPAMI</em>, 2017
-                <br>
-                <a href="http://www.eecs.berkeley.edu/Research/Projects/CS/vision/grouping/mcg/">project page</a> /
-                <a href="data/PontTusetTPAMI2017.bib">bibtex</a> /
-                <a href="https://drive.google.com/file/d/1AiB78Fy7QVA3KqgcooyzMAC5L8HhNzjz/view?usp=sharing">fast eigenvector code</a>
-                <p></p>
-                <p>We produce state-of-the-art contours, regions and object candidates, and we compute normalized-cuts eigenvectors 20&times faster.</p>
-                <p>This paper subsumes our CVPR 2014 paper.</p>
+                <p>An in-memory JSON model with a query language to select, filter, and aggregate data.</p>
               </td>
             </tr>
 
 
 
-            <tr>
-              <td style="padding:20px;width:25%;vertical-align:middle">
-                <img src="images/clean_promo.jpg" alt="clean-usnob" width="160" height="160">
-              </td>
-              <td width="75%" valign="middle">
-                <a href="https://drive.google.com/file/d/1YvRx-4hrZoCk-nl6OgVJZlHAqOiN5hWq/view?usp=sharing">
-                  <span class="papertitle">Cleaning the USNO-B Catalog Through Automatic Detection of Optical Artifacts</span>
-                </a>
-                <br>
-                <strong>Jonathan T. Barron</strong>, <a href="http://stumm.ca/">Christopher Stumm</a>, <a href="http://cosmo.nyu.edu/hogg/">David W. Hogg</a>, <a href="http://www.astro.princeton.edu/~dstn/">Dustin Lang</a>, <a href="http://cs.nyu.edu/~roweis/">Sam Roweis</a>
-                <br>
-                <em>The Astronomical Journal</em>, 135, 2008
-                <p>We use computer vision techniques to identify and remove diffraction spikes and reflection halos in the USNO-B Catalog.</p>
-                <p>In use at <a href="http://www.astrometry.net">Astrometry.net</a></p>
-              </td>
-            </tr>
-
+        
           </tbody></table>
 
           

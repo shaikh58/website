@@ -133,3 +133,23 @@ h2 {
 span.highlight {
   background-color: #ffffd0;
 }
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Space between boxes */
+  margin: 20px 0;
+}
+
+.contact-link {
+  text-decoration: none;
+  color: #fff; /* Text color */
+  background-color: rgba(88, 187, 229, 0.8); /* Opaque background color */
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.contact-link:hover {
+  background-color: rgba(0, 86, 179, 0.8); /* Hover background color */
+}
