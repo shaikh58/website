@@ -175,17 +175,17 @@
               <td style="padding:20px;width:25%;vertical-align:middle">
                 <div class="one">
                   <div class="two" id='particle_image'>
-                  <source src="images/particle_filter_2.png" width="100%">
-                  </video></div>
-                  <img src='images/particle_filter_1.png' width=100%>
+                    <img id="toggleParticleImage" src='images/particle_filter_1.png' width="100%">
+                  </div>
+                  <img src='images/particle_filter_2.png' width=100%>
                 </div>
                 <script type="text/javascript">
                   function particle_start() {
-                    document.getElementById('particle_image').style.opacity = "1";
+                    document.getElementById('toggleParticleImage').src = 'images/particle_filter_2.png';
                   }
         
                   function particle_stop() {
-                    document.getElementById('particle_image').style.opacity = "0";
+                    document.getElementById('toggleParticleImage').src = 'images/particle_filter_1.png';
                   }
                   particle_stop()
                 </script>
