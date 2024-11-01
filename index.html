@@ -171,26 +171,24 @@
     </tr>
 
 
-            <tr onmouseout="diverdi_stop()" onmouseover="diverdi_start()">
+            <tr onmouseout="particle_stop()" onmouseover="particle_start()">
               <td style="padding:20px;width:25%;vertical-align:middle">
                 <div class="one">
-                  <div class="two" id='diverdi_image'>
-                    <img id="toggleImage" src='images/particle_filter_2.png' width="100%">
-                  </div>
-                  <img src='images/particlefilter_1.png' width="20%">
+                  <div class="two" id='particle_image'>
+                  <source src="images/particle_filter_2.png" width="100%">
+                  </video></div>
+                  <img src='images/particle_filter_1.png' width=100%>
                 </div>
-              </td>
-            </tr>
-            <script type="text/javascript">
-              function diverdi_start() {
-                document.getElementById('toggleImage').src = 'images/other_img.png'; // Change to the image you want on mouse over
-              }
-            
-              function diverdi_stop() {
-                document.getElementById('toggleImage').src = 'images/particlefilter.png'; // Change back to the original image on mouse out
-              }
-              diverdi_stop();
-            </script>
+                <script type="text/javascript">
+                  function particle_start() {
+                    document.getElementById('particle_image').style.opacity = "1";
+                  }
+        
+                  function particle_stop() {
+                    document.getElementById('particle_image').style.opacity = "0";
+                  }
+                  particle_stop()
+                </script>
               </td>
               <td style="padding:20px;width:75%;vertical-align:middle">
                 <a href="https://github.com/shaikh58/ParticleFilterSLAM">
