@@ -174,19 +174,23 @@
             <tr onmouseout="diverdi_stop()" onmouseover="diverdi_start()">
               <td style="padding:20px;width:25%;vertical-align:middle">
                 <div class="one">
-                  <div class="two" id='diverdi_image'><img src='images/particlefilter.png'></div>
-                  <img src='images/particlefilter.png' width="50%">
+                  <div class="two" id='diverdi_image'>
+                    <img id="toggleImage" src='images/particle_filter_2.png' width="100%">
+                  </div>
+                  <img src='images/particlefilter_1.png' width="20%">
                 </div>
-                <!-- <script type="text/javascript">
-                  function diverdi_start() {
-                    document.getElementById('diverdi_image').style.opacity = "1";
-                  }
-
-                  function diverdi_stop() {
-                    document.getElementById('diverdi_image').style.opacity = "0";
-                  }
-                  diverdi_stop()
-                </script> -->
+              </td>
+            </tr>
+            <script type="text/javascript">
+              function diverdi_start() {
+                document.getElementById('toggleImage').src = 'images/other_img.png'; // Change to the image you want on mouse over
+              }
+            
+              function diverdi_stop() {
+                document.getElementById('toggleImage').src = 'images/particlefilter.png'; // Change back to the original image on mouse out
+              }
+              diverdi_stop();
+            </script>
               </td>
               <td style="padding:20px;width:75%;vertical-align:middle">
                 <a href="https://github.com/shaikh58/ParticleFilterSLAM">
